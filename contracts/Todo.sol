@@ -12,7 +12,7 @@ contract Todo {
     }
 
     mapping(uint => Task) public tasks;
-    uint nextTaskId
+    uint nextTaskId;
 
     event TaskCreated(
         uint id,
@@ -20,7 +20,7 @@ contract Todo {
         uint date,
 
         string content,
-        string author,
+        string author
     );
 
     event TaskStatusToggled(
